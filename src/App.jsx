@@ -3,7 +3,14 @@ import './App.css'
 function App() {
   return (
     <div className="portfolio">
-      
+
+      <div className="bg-orbs" aria-hidden="true">
+        <span className="orb orb-purple"></span>
+        <span className="orb orb-blue"></span>
+        <span className="orb orb-cyan"></span>
+        <span className="orb orb-violet"></span>
+      </div>
+
       {/* Navigation */}
       <nav className="navbar">
         <div className="container nav-content">
@@ -67,80 +74,9 @@ function App() {
               </div>
             </div>
 
-            {/* Application Dashboard */}
-            <div className="hero-dashboard">
-              <div className="dashboard-header">
-                <div>
-                  <p>Application Overview</p>
-                  <h3>System Operations</h3>
-                </div>
-
-                <div className="status">
-                  <span></span>
-                  Operational
-                </div>
-              </div>
-
-              <div className="dashboard-grid">
-
-                <div className="dashboard-card">
-                  <div className="card-icon">✓</div>
-                  <div>
-                    <p>Application</p>
-                    <strong>Healthy</strong>
-                  </div>
-                </div>
-
-                <div className="dashboard-card">
-                  <div className="card-icon">#</div>
-                  <div>
-                    <p>Open Tickets</p>
-                    <strong>Monitoring</strong>
-                  </div>
-                </div>
-
-                <div className="dashboard-card">
-                  <div className="card-icon">✓</div>
-                  <div>
-                    <p>Testing</p>
-                    <strong>In Progress</strong>
-                  </div>
-                </div>
-
-                <div className="dashboard-card">
-                  <div className="card-icon">↗</div>
-                  <div>
-                    <p>Resolution</p>
-                    <strong>Validated</strong>
-                  </div>
-                </div>
-
-              </div>
-
-              <div className="activity">
-                <div className="activity-title">
-                  <span>Recent Activity</span>
-                  <span>Live</span>
-                </div>
-
-                <div className="activity-item">
-                  <span className="activity-dot"></span>
-                  Client request received
-                  <small>Today</small>
-                </div>
-
-                <div className="activity-item">
-                  <span className="activity-dot"></span>
-                  Issue investigated
-                  <small>Today</small>
-                </div>
-
-                <div className="activity-item">
-                  <span className="activity-dot"></span>
-                  Fix validated
-                  <small>Today</small>
-                </div>
-              </div>
+            {/* Profile Photo */}
+            <div className="hero-photo">
+              <img src="/profile.jpeg" alt="Enrico C. Manabat" />
             </div>
 
           </div>
