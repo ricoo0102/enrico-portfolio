@@ -1,6 +1,25 @@
+import { useEffect } from 'react'
 import './App.css'
 
 function App() {
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view')
+            observer.unobserve(entry.target)
+          }
+        })
+      },
+      { threshold: 0.15 }
+    )
+
+    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el))
+
+    return () => observer.disconnect()
+  }, [])
+
   return (
     <div className="portfolio">
 
@@ -43,15 +62,14 @@ function App() {
               </p>
 
               <h1>
-                I Help Businesses Keep Their Applications
-                <span> Reliable, Usable, and Client-Ready.</span>
+                Keeping Applications
+                <span> Reliable & Client-Ready.</span>
               </h1>
 
               <p className="hero-description">
                 Application Specialist focused on application support,
-                troubleshooting, software testing, CMS management,
-                client coordination, and delivering practical solutions
-                for business applications.
+                troubleshooting, testing, and client coordination for
+                reliable business software.
               </p>
 
               <p className="placeholder">
@@ -86,7 +104,7 @@ function App() {
         </section>
 
         {/* About */}
-        <section id="about" className="section">
+        <section id="about" className="section reveal">
           <div className="container">
             <p className="section-label">ABOUT ME</p>
             <h2>Technical Understanding with a User-Focused Approach.</h2>
@@ -135,7 +153,7 @@ function App() {
         </section>
 
         {/* Experience */}
-        <section id="experience" className="section section-dark">
+        <section id="experience" className="section section-dark reveal">
           <div className="container">
             <p className="section-label">EXPERIENCE</p>
             <h2>Professional Experience</h2>
@@ -167,7 +185,7 @@ function App() {
         </section>
 
         {/* Skills */}
-        <section id="skills" className="section section-dark">
+        <section id="skills" className="section section-dark reveal">
           <div className="container">
             <p className="section-label">EXPERTISE</p>
             <h2>Skills & Expertise</h2>
@@ -213,7 +231,7 @@ function App() {
         </section>
 
         {/* Workflow */}
-        <section className="section">
+        <section className="section reveal">
           <div className="container">
             <p className="section-label">MY PROCESS</p>
             <h2>How I Solve Application Issues</h2>
@@ -261,7 +279,7 @@ function App() {
         </section>
 
         {/* Contact */}
-        <section id="contact" className="section contact-section">
+        <section id="contact" className="section contact-section reveal">
           <div className="container contact-content">
             <p className="section-label">CONTACT</p>
 
