@@ -1,16 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
-
 :root {
-  --bg: #05070f;
-  --text: #f5f7fb;
-  --muted: #a3aec4;
-  --accent: #8b5cf6;
-  --accent-light: #67e8f9;
-  --accent-blue: #60a5fa;
-  --glass-bg: rgba(255, 255, 255, 0.055);
-  --glass-bg-strong: rgba(255, 255, 255, 0.08);
-  --glass-border: rgba(255, 255, 255, 0.12);
-  --glass-highlight: rgba(255, 255, 255, 0.25);
+  --bg: #060605;
+  --text: #f5f2ea;
+  --muted: #a89f8f;
+  --accent: #c9a962;
+  --accent-light: #e8d5a3;
+  --accent-blue: #8a6d3f;
+  --accent-pale: #f5ead0;
+  --glass-bg: rgba(255, 255, 255, 0.045);
+  --glass-bg-strong: rgba(255, 255, 255, 0.07);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-highlight: rgba(255, 255, 255, 0.2);
 }
 
 * {
@@ -23,7 +22,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background: var(--bg);
   color: var(--text);
   overflow-x: hidden;
@@ -68,7 +67,8 @@ button {
   height: 520px;
   top: -140px;
   left: -120px;
-  background: radial-gradient(circle, #8b5cf6, transparent 70%);
+  background: radial-gradient(circle, var(--accent), transparent 70%);
+  opacity: 0.28;
   animation: drift-a 26s ease-in-out infinite alternate;
 }
 
@@ -77,7 +77,8 @@ button {
   height: 600px;
   top: 30%;
   right: -180px;
-  background: radial-gradient(circle, #2563eb, transparent 70%);
+  background: radial-gradient(circle, var(--accent-blue), transparent 70%);
+  opacity: 0.3;
   animation: drift-b 32s ease-in-out infinite alternate;
 }
 
@@ -86,8 +87,8 @@ button {
   height: 420px;
   bottom: -120px;
   left: 28%;
-  background: radial-gradient(circle, #06b6d4, transparent 70%);
-  opacity: 0.38;
+  background: radial-gradient(circle, var(--accent-pale), transparent 70%);
+  opacity: 0.16;
   animation: drift-c 24s ease-in-out infinite alternate;
 }
 
@@ -96,8 +97,8 @@ button {
   height: 360px;
   bottom: 35%;
   right: 18%;
-  background: radial-gradient(circle, #d946ef, transparent 70%);
-  opacity: 0.22;
+  background: radial-gradient(circle, #3a2c14, transparent 70%);
+  opacity: 0.3;
   animation: drift-a 36s ease-in-out infinite alternate-reverse;
 }
 
@@ -130,7 +131,7 @@ button {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(10, 14, 30, 0.55);
+  background: rgba(6, 6, 5, 0.6);
   backdrop-filter: blur(22px) saturate(160%);
   -webkit-backdrop-filter: blur(22px) saturate(160%);
   border-bottom: 1px solid var(--glass-border);
@@ -168,18 +169,18 @@ button {
 
 .nav-button {
   padding: 11px 17px;
-  border: 1px solid rgba(139, 92, 246, 0.45);
+  border: 1px solid rgba(201, 169, 98, 0.45);
   border-radius: 12px;
   color: white;
   font-size: 14px;
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(37, 99, 235, 0.15));
+  background: linear-gradient(135deg, rgba(201, 169, 98, 0.2), rgba(138, 109, 63, 0.15));
   backdrop-filter: blur(12px);
   transition: 0.2s ease;
 }
 
 .nav-button:hover {
-  border-color: rgba(103, 232, 249, 0.5);
-  box-shadow: 0 0 20px rgba(139, 92, 246, 0.35);
+  border-color: rgba(232, 213, 163, 0.5);
+  box-shadow: 0 0 20px rgba(201, 169, 98, 0.35);
 }
 
 /* =========================
@@ -225,7 +226,7 @@ button {
 
 .hero h1 span {
   display: block;
-  background: linear-gradient(90deg, #a78bfa, #60a5fa, #67e8f9);
+  background: linear-gradient(90deg, var(--accent), var(--accent-light), var(--accent-pale));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -258,15 +259,15 @@ button {
 }
 
 .primary-button {
-  color: white;
-  background: linear-gradient(135deg, #8b5cf6, #2563eb);
-  box-shadow: 0 8px 28px rgba(139, 92, 246, 0.35);
+  color: #0a0806;
+  background: linear-gradient(135deg, var(--accent-light), var(--accent));
+  box-shadow: 0 8px 28px rgba(201, 169, 98, 0.3);
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .primary-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 34px rgba(139, 92, 246, 0.5);
+  box-shadow: 0 12px 34px rgba(201, 169, 98, 0.45);
 }
 
 .secondary-button {
@@ -278,7 +279,7 @@ button {
 
 .secondary-button:hover {
   background: var(--glass-bg-strong);
-  border-color: rgba(103, 232, 249, 0.4);
+  border-color: rgba(232, 213, 163, 0.4);
   transform: translateY(-2px);
 }
 
@@ -314,13 +315,13 @@ button {
   border-radius: 30px;
   background: linear-gradient(
     135deg,
-    rgba(139, 92, 246, 0.55),
-    rgba(37, 99, 235, 0.4),
-    rgba(103, 232, 249, 0.45)
+    rgba(201, 169, 98, 0.55),
+    rgba(138, 109, 63, 0.4),
+    rgba(232, 213, 163, 0.45)
   );
   box-shadow:
     0 30px 80px rgba(0, 0, 0, 0.5),
-    0 0 70px rgba(139, 92, 246, 0.28);
+    0 0 70px rgba(201, 169, 98, 0.25);
 }
 
 .hero-photo::before {
@@ -329,7 +330,7 @@ button {
   inset: -40px;
   z-index: -1;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(139, 92, 246, 0.3), transparent 70%);
+  background: radial-gradient(circle, rgba(201, 169, 98, 0.28), transparent 70%);
   filter: blur(40px);
 }
 
@@ -399,11 +400,11 @@ button {
 .experience-card:hover {
   transform: translateY(-5px);
   background: var(--glass-bg-strong);
-  border-color: rgba(103, 232, 249, 0.35);
+  border-color: rgba(232, 213, 163, 0.3);
   box-shadow:
     inset 0 1px 0 var(--glass-highlight),
     0 18px 50px rgba(0, 0, 0, 0.4),
-    0 0 30px rgba(139, 92, 246, 0.18);
+    0 0 30px rgba(201, 169, 98, 0.15);
 }
 
 .info-card {
@@ -447,7 +448,7 @@ button {
   height: 100%;
   border-radius: 10px;
   background: linear-gradient(180deg, var(--accent), var(--accent-light));
-  box-shadow: 0 0 16px rgba(139, 92, 246, 0.6);
+  box-shadow: 0 0 16px rgba(201, 169, 98, 0.5);
 }
 
 .experience-card h3 {
@@ -456,7 +457,7 @@ button {
 }
 
 .placeholder {
-  color: #718198 !important;
+  color: #8f8778 !important;
   font-size: 13px;
 }
 
@@ -553,9 +554,9 @@ button {
   color: var(--accent-light);
   font-size: 12px;
   font-weight: 700;
-  border: 1px solid rgba(103, 232, 249, 0.25);
+  border: 1px solid rgba(232, 213, 163, 0.25);
   border-radius: 10px;
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(37, 99, 235, 0.15));
+  background: linear-gradient(135deg, rgba(201, 169, 98, 0.2), rgba(138, 109, 63, 0.15));
 }
 
 .workflow-step h3 {
@@ -633,7 +634,7 @@ button {
   padding: 35px 0;
   border-top: 1px solid var(--glass-border);
   color: var(--muted);
-  background: rgba(10, 14, 30, 0.4);
+  background: rgba(6, 6, 5, 0.5);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
 }

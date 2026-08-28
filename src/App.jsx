@@ -22,9 +22,7 @@ function App() {
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
             <a href="#skills">Skills</a>
-            <a href="#certifications">Certifications</a>
             <a href="#contact">Contact</a>
           </div>
 
@@ -56,8 +54,13 @@ function App() {
                 for business applications.
               </p>
 
+              <p className="placeholder">
+                Bachelor of Science in Information Technology · STI College
+                Balagtas · Graduated 2025
+              </p>
+
               <div className="hero-buttons">
-                <a href="#projects" className="primary-button">
+                <a href="#experience" className="primary-button">
                   View My Work
                 </a>
 
@@ -145,10 +148,10 @@ function App() {
                   APPLICATION SPECIALIST
                 </p>
 
-                <h3>[Company Name]</h3>
+                <h3>Odecci Solutions Inc.</h3>
 
                 <p className="placeholder">
-                  [Employment Date] · [Location]
+                  September 22, 2025 · Guiguinto, Bulacan
                 </p>
 
                 <p>
@@ -159,92 +162,6 @@ function App() {
                   updates to clients.
                 </p>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Projects */}
-        <section id="projects" className="section">
-          <div className="container">
-            <p className="section-label">SELECTED WORK</p>
-            <h2>Projects</h2>
-
-            <div className="project-grid">
-
-              <div className="project-card">
-                <span className="project-tag">Application Specialist</span>
-                <h3>AFL Cross Platform</h3>
-                <p>
-                  Supported and tested a cross-platform application and CMS
-                  ecosystem, including application modules, client-requested
-                  enhancements, issue investigation, and release validation.
-                </p>
-
-                <div className="project-tools">
-                  <span>Application Testing</span>
-                  <span>CMS</span>
-                  <span>Bug Investigation</span>
-                  <span>Client Coordination</span>
-                </div>
-
-                <button>View Case Study →</button>
-              </div>
-
-              <div className="project-card">
-                <span className="project-tag">Application Specialist</span>
-                <h3>Alfardan Oyster Privilege Club</h3>
-                <p>
-                  Supported a membership and privilege platform involving
-                  mobile application and web-based CMS functionality.
-                </p>
-
-                <div className="project-tools">
-                  <span>Troubleshooting</span>
-                  <span>Testing</span>
-                  <span>CMS Support</span>
-                  <span>Validation</span>
-                </div>
-
-                <button>View Case Study →</button>
-              </div>
-
-              <div className="project-card">
-                <span className="project-tag">Application Specialist</span>
-                <h3>Alfardan Living</h3>
-                <p>
-                  Supported mobile and CMS functionality for a property and
-                  lifestyle platform.
-                </p>
-
-                <div className="project-tools">
-                  <span>Functional Testing</span>
-                  <span>CMS</span>
-                  <span>Support</span>
-                  <span>Release Testing</span>
-                </div>
-
-                <button>View Case Study →</button>
-              </div>
-
-              <div className="project-card">
-                <span className="project-tag">Application Support / Testing</span>
-                <h3>PromoMojo</h3>
-                <p>
-                  Supported application issues and enhancement requests
-                  involving product functionality, pricing, content, and
-                  platform behavior.
-                </p>
-
-                <div className="project-tools">
-                  <span>Issue Investigation</span>
-                  <span>Testing</span>
-                  <span>Bug Validation</span>
-                  <span>Enhancements</span>
-                </div>
-
-                <button>View Case Study →</button>
-              </div>
-
             </div>
           </div>
         </section>
@@ -343,46 +260,6 @@ function App() {
           </div>
         </section>
 
-        {/* Certifications */}
-        <section id="certifications" className="section section-dark">
-          <div className="container">
-            <p className="section-label">EDUCATION & CERTIFICATIONS</p>
-            <h2>Certifications & Education</h2>
-
-            <div className="cert-grid">
-
-              <div className="cert-card">
-                <span>Certification</span>
-                <h3>Java Foundations Certification</h3>
-                <p>[Issuing Organization]</p>
-                <small>[Date] · Credential ID: [Credential ID]</small>
-              </div>
-
-              <div className="cert-card">
-                <span>Certification</span>
-                <h3>Systems Administration Certification</h3>
-                <p>[Issuing Organization]</p>
-                <small>[Date] · Credential ID: [Credential ID]</small>
-              </div>
-
-              <div className="cert-card">
-                <span>Certification</span>
-                <h3>SAP Business One Certification</h3>
-                <p>[Issuing Organization]</p>
-                <small>[Date] · Credential ID: [Credential ID]</small>
-              </div>
-
-              <div className="cert-card">
-                <span>Education</span>
-                <h3>Bachelor of Science in Information Technology</h3>
-                <p>[Educational Institution]</p>
-                <small>[Graduation Date]</small>
-              </div>
-
-            </div>
-          </div>
-        </section>
-
         {/* Contact */}
         <section id="contact" className="section contact-section">
           <div className="container contact-content">
@@ -396,16 +273,31 @@ function App() {
             </p>
 
             <div className="contact-buttons">
-              <a href="mailto:[YOUR EMAIL]" className="primary-button">
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=enricoc.manabat@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="primary-button"
+              >
                 Email Me
               </a>
 
-              <a href="#" className="secondary-button">
+              <a
+                href="https://www.linkedin.com/in/enricooo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="secondary-button"
+              >
                 LinkedIn
               </a>
 
-              <a href="#" className="secondary-button">
-                GitHub
+              <a
+                href="https://wa.me/639770580481"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="secondary-button"
+              >
+                Call Me
               </a>
             </div>
           </div>
