@@ -34,7 +34,7 @@ function App() {
       <nav className="navbar">
         <div className="container nav-content">
           <a href="#home" className="logo">
-            Enrico C. Manabat
+            Enrico Manabat
           </a>
 
           <div className="nav-links">
@@ -166,7 +166,14 @@ function App() {
                   APPLICATION SPECIALIST
                 </p>
 
-                <h3>Odecci Solutions Inc.</h3>
+                <div className="experience-title-row">
+                  <img
+                    src="/Odecci%20logo%20plain.png"
+                    alt="Odecci Solutions Inc. logo"
+                    className="company-logo"
+                  />
+                  <h3>Odecci Solutions Inc.</h3>
+                </div>
 
                 <p className="placeholder">
                   September 22, 2025 · Guiguinto, Bulacan
@@ -179,6 +186,15 @@ function App() {
                   managing support tickets, and communicating technical
                   updates to clients.
                 </p>
+
+                <a
+                  href="https://odecci.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="company-link-button"
+                >
+                  View Website
+                </a>
               </div>
             </div>
           </div>
@@ -326,9 +342,9 @@ function App() {
       {/* Footer */}
       <footer className="footer">
         <div className="container">
-          <strong>Enrico C. Manabat</strong>
+          <strong>Enrico Manabat</strong>
           <p>Application Specialist | IT Professional</p>
-          <small>© 2026 Enrico C. Manabat. All rights reserved.</small>
+          <small>© 2026 Enrico Manabat. All rights reserved.</small>
         </div>
       </footer>
 

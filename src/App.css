@@ -514,8 +514,46 @@ button {
 }
 
 .experience-card h3 {
-  margin: 10px 0 4px;
+  margin: 0;
   font-size: 25px;
+}
+
+.experience-title-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 10px 0 4px;
+}
+
+.company-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: #fff;
+  padding: 8px;
+}
+
+.company-link-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid var(--glass-border);
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition: 0.25s ease;
+}
+
+.company-link-button:hover {
+  background: var(--glass-bg-strong);
+  border-color: rgba(232, 213, 163, 0.4);
+  transform: translateY(-2px);
 }
 
 .placeholder {
