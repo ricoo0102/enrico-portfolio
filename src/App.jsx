@@ -325,12 +325,7 @@ function App() {
                 LinkedIn
               </a>
 
-              <a
-                href="https://wa.me/639770580481"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="secondary-button"
-              >
+              <a href="tel:+639770580481" className="secondary-button">
                 Call Me
               </a>
             </div>
